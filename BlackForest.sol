@@ -622,8 +622,6 @@ abstract contract Liquifier is Ownable, Manageable {
     // PancakeSwap V2
     address private _mainnetRouterV2Address = 0x10ED43C718714eb63d5aA57B78B54704E256024E;
     // Testnet
-    // address private _testnetRouterAddress = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
-    // PancakeSwap Testnet = https://pancake.kiemtienonline360.com/
     address private _testnetRouterAddress = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
 
     IPancakeV2Router internal _router;

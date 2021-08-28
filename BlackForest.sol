@@ -624,7 +624,7 @@ abstract contract Liquifier is Ownable, Manageable {
     // Testnet
     // address private _testnetRouterAddress = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
     // PancakeSwap Testnet = https://pancake.kiemtienonline360.com/
-    address private _testnetRouterAddress = 0x9Ac64Cc6e4415144C455BD8E4837Fea55603e5c3;
+    address private _testnetRouterAddress = 0xD99D1c33F9fC3444f8101754aBC46c52416550D1;
 
     IPancakeV2Router internal _router;
     address internal _pair;
@@ -956,7 +956,7 @@ abstract contract SafeToken is BaseRfiToken, Liquifier, Antiwhale {
     }
 }
 
-contract SafeTokenV1Beta is SafeToken{
+contract BlackForest is SafeToken{
 
     constructor() SafeToken(Env.Testnet){
         _approve(owner(),address(_router), ~uint256(0));
